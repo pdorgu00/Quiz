@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Js Quiz</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<div id="wrong"></div>
+    
+<div id="correct"></div>
+  
+<div id="lowtime">
+</div>
+
+
+<body>
+    
+
+    <div class="head">
+        <h5 id="scorebtn"> Highscores</h5>
+        <h5 class="time">Time: 0 </h5>
+    </div>
+    <div class="container">
+        
+
+        <div id="#frame">
+   
+            <div class="card" id="start-box" style="width: 18rem;">
+                <div class="card-body">
+                    <h2 class="card-title">Javascript Quiz</h2>
+                    <p class="card-text"></p>
+                    <button type="button" id="startbtn" class="btn btn-primary btn-lg">Start Quiz</button>
+                </div>
+            </div>
+
+            
+            <div id="question-box" class="d-flex justify-content-center">
+                <div class="border">
+                    <h1 id="question"> </h1>
+                    <ul id="choices"> </ul>
+                </div>
+            </div>
+
+        
+            <div id="enter-name" style="display:none;">
+                <form id="inputname" class="bordername" method="POST">
+                    <h1>Enter Name</h1>
+                    <input type="text" placeholder="Enter Your Name!" name="playername" id="playername">
+                </form>
+            </div>
+
+            
+            <div id="results-box">
+                <div id="resultframe">
+                    <div class="d-flex justify-content-center">
+                        <h1>scores</h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" id="deletescores" class="btn btn-primary btn-sm mr-2">Clear Scores</button>
+                        <button type="button" id="restart" class="btn btn-primary btn-sm ml-2" >Play again</button>
+                    </div>
+                    <ul id="scores" style="float: left;"> </ul>
+
+                    <ul id="times" style="float: right;"> </ul>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./questions.js"></script>
+    <script src="./quiz.js"></script>
+
+</body>
